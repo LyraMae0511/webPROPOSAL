@@ -1,778 +1,394 @@
 <!DOCTYPE html>
-
 <html>
-
 <style>
-
 * {
-
-  margin: 0;
-
-  padding: 0;
-
-  box-sizing: border-box;
-
-  font-family: "Exo 2", times;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", times;
+  scroll: smooth;
 }
-
 body {
-
-  background-color: linear-gradient(to right, #ffffff, #eae068, #bdca45, #41cfaa, #39d8ce, #ffffff);
-
-  background-position: center;
-
-  background-size: cover;
-
-  height: 100vh;
-
-  display: grid;
-
-  place-items: Center;
-
-  color: #fff;
-
+  background: linear-gradient(to right, #ffffff, #eae068, #bdca45, #41cfaa, #39d8ce, #ffffff);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  place-items: Center;
+  color: #fff;
 }
-
 .container {
-
-  background-color: rgba(0, 0, 0, 0.2);
-
-  max-width: 1200px;
-
-  width: 100%;
-
-  padding: 2em 0px;
-
-  backdrop-filter: blur(10px);
-
-  border-radius: 10px;
-
+  background: linear-gradient(to right, #ffffff, #eae068, #bdca45, #41cfaa, #39d8ce, #ffffff);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  width: 100%;
+  padding: 2em 0px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
-
 .container h1 {
-
-  text-align: center;
-
-  padding: 10px;
-
-  letter-spacing: 10px;
-
-  color: #505050;
-
-  font-size: 4em;
-
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 10px;
+  color: #505050;
+  font-size: 4em;
 }
-
 .container .list {
-
-  position: relative;
-
-  background: rgba(0, 0, 0, 0.2);
-
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.40 );
-
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 -webkit-backdrop-filter: blur( 4px );
-
 border-radius: 10px;
-
-border: 1px solid rgba(#FFFFFF);
-
-  width: 80%;
-
-  margin: 20px auto;
-
-  display: flex;
-
-  align-items: center;
-
-  backdrop-filter: blur(10px);
-
-  border-radius: 50px;
-
-  overflow: hidden;
-
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  overflow: hidden;
 }
-
 .container .list img {
-
-  hieght: 100px;
-
-  width: 300px;
-
+  image-position: center;
+  hieght: 100px;
+  width: 300px;
 }
-
 .container .list .wrapper {
-
-  padding-left: 20px;
-
+  padding-left: 20px;
 }
-
 .container .list .wrapper h3 {
-
-  text-align: center;
-
-  padding: 10px;
-
-  letter-spacing: 2px;
-
-  font-family: times;
-
-  font-size: 2em;
-
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 2px;
+  font-family: times;
+  font-size: 2em;
 }
-
 .container .list .wrapper h4 {
-
-  letter-spacing: 2px;
-
-  font-family: times;
-
-  font-size: 1.5em;
-
+  letter-spacing: 2px;
+  font-family: times;
+  font-size: 1.5em;
 }
-
 .container .list .wrapper ul {
-
-  font-family: courier;
-
-  color: #d8d8d8;
-
-  font-size: 1em;
-
+  font-family: courier;
+  color: #d8d8d8;
+  font-size: 1em;
 }
-
 .container .list .wrapper li {
-
-  font-family: courier;
-
-  color: #d8d8d8;
-
-  font-size: 1em;
-
+  font-family: courier;
+  color: #d8d8d8;
+  font-size: 1em;
 }
-
 .container .list .wrapper p {
-
-  padding: 5px;
-
-  margin-left: 9px;
-
-  letter-spacing: 2px;
-
-  font-family: sans-serif;
-
-  font-size: 0.7em;
-
-  color: #c6c6c6;
-
+  padding: 5px;
+  margin-left: 9px;
+  letter-spacing: 2px;
+  font-family: sans-serif;
+  font-size: 0.7em;
+  color: #c6c6c6;
 }
-
- 
-
+ 
 </style>
-
 <head>
-
-    <meta charset="utf-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>Super Tasty</title>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Super Tasty</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
-
- 
-
+ 
 <body>
-
 <br>
-
 <div class="container">
-
-  <h1>SUPER TASTY</h1>
-
- 
-
-  <div class="list">
-
-    <div class="wrapper">
-
-      <h3>CHICKEN ADOBO</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2018/11/Filipino-Chicken-Adobo.jpg"></center>
-
-      <h4>INGREDIENTS</h4>
-
+  <h1>SUPER TASTY</h1>
+ 
+  <div class="list">
+    <div class="wrapper">
+      <h3>CHICKEN ADOBO</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2018/11/Filipino-Chicken-Adobo.jpg"></center>
+      <h4>INGREDIENTS</h4>
 <ul>2 lbs chicken cut into serving pieces</ul>
-
 <ul>3 pieces dried bay leaves</ul>
-
 <ul>8 tablespoons soy sauce</ul>
-
 <ul>4 tablespoons white vinegar</ul>
-
 <ul>5 cloves garlic crushed</ul>
-
 <ul>1 1/2 cups water</ul>
-
 <ul>3 tablespoons cooking oil</ul>
-
 <ul>1 teaspoon sugar</ul>
-
 <ul>1/4 teaspoon salt optional</ul>
-
 <ul>1 teaspoon whole peppercorn</ul>
-
 <h4>INSTRUCTIONS</h4>
-
 <li>Combine chicken, soy sauce, and garlic in a large bowl. Mix well. Marinate the chicken for at least 1 hour. Note: the longer the time, the better.</li>
-
 <li>Heat a cooking pot. Pour cooking oil.</li>
-
 <li>When the oil is hot enough, pan-fry the marinated chicken for 2 minutes per side.</li>
-
 <li>Pour-in the remaining marinade, including garlic. Add water. Bring to a boil.</li>
-
 <li>Add dried bay leaves and whole peppercorn. Simmer for 30 minutes or until the chicken gets tender.</li>
-
 <li>Add vinegar. Stir and cook for 10 minutes.</li>
-
 <li>Put-in the sugar, and salt. Stir and turn the heat off.Serve hot. Share and Enjoy!</li>
-
 <h4>NUTRITIONS</h4>
-
 <p>Calories: 607kcal | Carbohydrates: 4g | Protein: 44g | Fat: 44g | Saturated Fat: 10g | Cholesterol: 170mg | Sodium: 1317mg | Potassium: 496mg | Sugar: 1g | Vitamin A: 365IU | Vitamin C: 5.1mg | Calcium: 50mg | Iron: 3mg
-
 </p>
-
-   </div>
-
+   </div>
 </div>
-
 <br>
-
-  <div class="list">
-
-    <div class="wrapper">
-
-      <h3>SINIGANG NA HIPON</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2009/11/siningang-na-hipon-360x361.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+  <div class="list">
+    <div class="wrapper">
+      <h3>SINIGANG NA HIPON</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2009/11/siningang-na-hipon-360x361.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>1 lb. shrimp cleaned</ul>
-
 <ul>44 grams Knorr Sinigang sa Sampaloc Mix</ul>
-
 <ul>1 bunch kangkong</ul>
-
 <ul>15 pieces snake beans</ul>
-
 <ul>5 pieces okra</ul>
-
 <ul>1 piece eggplant</ul>
-
 <ul>1 cup daikon radish sliced</ul>
-
 <ul>1 piece tomato sliced</ul>
-
 <ul>3 pieces long green pepper</ul>
-
 <ul>1 piece onion</ul>
-
 <ul>2 quarts water</ul>
-
 <ul>Fish sauce and ground black pepper to taste</ul>
-
- 
-
-     <h4>INSTRUCTIONS</h4>
-
+ 
+     <h4>INSTRUCTIONS</h4>
 <li>Boil water in a cooking pot. Add onion, tomato, and radish. Cover and continue to boil for 8 minutes.
-
 <li>Add shrimp. Cook for 1 minute.
-
 <li>Add Knorr Sinigang sa Sampaloc Recipe Mix. Stir until it dilutes completely. Cover and cook for 3 minutes.
-
 <li>Add long green pepper, snake beans, okra, and eggplant. Stir. Cook for 5 minutes.
-
 <li>Put the kangkong stalks into the pot. Season with fish salt and ground black pepper.
-
 <li>Add kangkong leaves. Cook for 1 minute.</li>
-
 <li>Transfer to a serving bowl. Serve warm with rice.</li>
-
- 
-
+ 
 <h4>NUTRITIONS</h4>
-
 <p>Calories: 283kcal | Carbohydrates: 38g | Protein: 32g | Fat: 3g | Saturated Fat: 1g | Cholesterol: 286mg | Sodium: 955mg | Potassium: 1367mg | Fiber: 15g | Sugar: 19g | Vitamin A: 3752IU | Vitamin C: 74mg | Calcium: 356mg | Iron: 7mg</p>
-
-   </div>
-
-  </div>
-
+   </div>
+  </div>
 <br>
-
- <div class="list">
-
-    <div class="wrapper">
-
-      <h3>SINIGANG NA HIPON</h3>
-
-    <center><img src="https://www.kawalingpinoy.com/wp-content/uploads/2016/03/ginataangulay1.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+ <div class="list">
+    <div class="wrapper">
+      <h3>SINIGANG NA HIPON</h3>
+    <center><img src="https://www.kawalingpinoy.com/wp-content/uploads/2016/03/ginataangulay1.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>1 tablespoon oil</ul>
-
 <ul>1 onion peeled and chopped</ul>
-
 <ul>2 cloves garlic peeled and minced</ul>
-
 <ul>½ pound pork belly cut into 1-inch strips</ul>
-
 <ul>½ pound medium shrimp peeled and deveined</ul>
-
 <ul>1 tablespoon sauteed shrimp paste</ul>
-
 <ul>1 can 19 ounces coconut cream (kakang gata)</ul>
-
 <ul>1 cup water</ul>
-
 <ul>8 ounces frozen young green jackfruit thawed and cut into 1-inch pieces or 1 (20 ounces) can young green jackfruit</ul>
-
 <ul>½ medium calabasa peeled, seeded and cut into 1-inch cubes</ul>
-
 <ul>10 to 12 pieces green beans ends trimmed and cut into halves</ul>
-
 <ul>2 medium eggplant ends trimmed and cut into 1-inch thickness</ul>
-
 <ul>salt and pepper to taste</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>In a wide pan over medium heat, heat oil. Add onions and garlic and cook until limp. Add pork and cook, stirring occasionally, until lightly browned. Add shrimps and cook just until color changes to pink. Add shrimp paste and cook, stirring regularly, for about 1 to 2 minutes.</li>
-
 <li>Add coconut cream and water. Bring to a simmer and continue to cook for about 3 to 5 minutes until slightly thickened and reduced.</li>
-
 <li>Add jackfruit and cook for about 3 to 5 minutes. Add calabasa and cook until tender but firm. Add green beans and eggplant and continue to cook until vegetables are tender and sauce is thickened. Season with salt and pepper to taste. Serve hot.</li>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
-
 <div class="list">
-
-    <div class="wrapper">
-
-      <h3>LECHON PAKSIW</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2021/02/easy-lechon-paksiw-360x361.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+    <div class="wrapper">
+      <h3>LECHON PAKSIW</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2021/02/easy-lechon-paksiw-360x361.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>2 ½ lbs. pork lechon</ul>
-
 <ul>1 piece Knorr Pork Cube</ul>
-
 <ul>3 cups lechon sauce</ul>
-
 <ul>2 pieces onion chopped</ul>
-
 <ul>5 cloves garlic chopped</ul>
-
 <ul>½ cup white vinegar</ul>
-
 <ul>¼ cup white sugar</ul>
-
 <ul>5 pieces dried bay leaves</ul>
-
 <ul>2 teaspoons whole peppercorn</ul>
-
 <ul>2 ½ cups water</ul>
-
 <ul>Salt to taste</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>Chop the lechon into serving pieces. Place in a large cooking pot and add water. Bring to a boil.</li>
-
 <li>Add garlic, onion, whole peppercorn, and dried bay leaves. Cover the pot. Boil for 5 minutes.</li>
-
 <li>Add Knorr Pork Cube and vinegar. Cover the pot. Let boil. Adjust the heat between low to medium. Cook for 30 minutes.</li>
-
 <li>Pour lechon sauce into the pan. Stir. Cook for 15 minutes.</li>
-
 <li>Add sugar and season with salt. Cook for 3 minutes.</li>
-
 <li>Transfer to a serving bowl. Serve with rice.</li>
-
 <h4>NUTRITIONS</h4>
-
 <p>Calories: 58kcal | Carbohydrates: 13g | Protein: 1g | Fat: 1g | Saturated Fat: 1g | Cholesterol: 1mg | Sodium: 199mg | Potassium: 44mg | Fiber: 1g | Sugar: 10g | Vitamin A: 72IU | Vitamin C: 1mg | Calcium: 28mg | Iron: 1mg</p>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
-
 <div class="list">
-
-    <div class="wrapper">
-
-      <h3>LECHON PAKSIW</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2016/08/Kinilaw-na-Tanigue.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+    <div class="wrapper">
+      <h3>LECHON PAKSIW</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2016/08/Kinilaw-na-Tanigue.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>2 lbs. Tanigue Wahoo fish, fillet and cut into cubes</ul>
-
 <ul>2 thumbs fresh ginger minced</ul>
-
 <ul>8 pieces hot chili Thai chili or siling labuyo, chopped</ul>
-
 <ul>15 to 20 pieces calamansi</ul>
-
 <ul>1 medium red onion chopped into small pieces</ul>
-
 <ul>¼ teaspoon ground black pepper</ul>
-
 <ul>½ teaspoon sugar</ul>
-
 <ul>Salt to taste</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>Squeeze the juice out of the calamansi over a large bowl. Use a sieve to filter the seeds. Discard the seeds.</li>
-
 <li>In the bowl with calamansi juice, add sugar, ½ teaspoon salt, and ground black pepper. Stir until the sugar and salt are diluted.</li>
-
 <li>Add the ginger, chili, and onion. Stir for a few seconds until all ingredients are well blended.</li>
-
 <li>Arranged the raw fish cubes in a large bowl. Pour the calamansi mixture. Toss until the fish cubes are coated. Let is stay for 10 minutes.</li>
-
 <li>Toss one more time and taste. Add more salt if needed. You can also add more calamansi juice if needed. Toss to blend all the ingredients. Securely cover the bowl and place it inside the refrigerator. Let it chill for at least 3 hours.</li>
-
 <li>Serve. Share and enjoy!</li>
-
 <h4>NUTRITIONS</h4>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
-
 <div class="list">
-
 <div class="wrapper">
-
-      <h3>BANGUS SISIG</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2012/08/Bangus-Sisig.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+      <h3>BANGUS SISIG</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2012/08/Bangus-Sisig.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>1 piece bangus fried or baked, and then flaked</ul></ul>
-
 <ul>1 piece onion chopped</ul>
-
 <ul>1/2 cup scallions chopped</ul>
-
 <ul>1 tablespoon chili pepper labuyo or Thai chili</ul>
-
 <ul>1/2 teaspoon ground black pepper</ul>
-
 <ul>1 tablespoon soy sauce</ul>
-
 <ul>2 teaspoons ginger minced</ul>
-
 <ul>1 cup crushed chicharon pork rind</ul>
-
 <ul>1/2 tablespoon mayonnaise</ul>
-
 <ul>1/4 cup unsalted butter</ul>
-
 <ul>1 teaspoon garlic powder</ul>
-
 <ul>1/2 teaspoon salt</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>Melt-in butter in a large pan</li>
-
 <li>Add the onion and cook for 3 minutes</li>
-
 <li>Put-in the ginger. Stir and cook for 2 minutes in low to medium heat.</li>
-
 <li>Add the bangus and then stir.</li>
-
 <li>Put-in the garlic powder, salt,ground black pepper, and soy sauce. Stir and cook for 5 minutes.</li>
-
 <li>Add the chicharon, scallions, and chili. Stir and cook for 3 minutes more.</li>
-
 <li>Put-in the mayonnaise. Stir.</li>
-
 <li>Transfer to a serving plate. Serve.</li>
-
 <li>Share and enjoy!</li>
-
 <h4>NUTRITIONS</h4>
-
 <p>Serving: 4g | Calories: 416kcal | Carbohydrates: 5g | Protein: 46g | Fat: 22g | Saturated Fat: 10g | Cholesterol: 164mg | Sodium: 694mg | Potassium: 942mg | Fiber: 1g | Sugar: 2g | Vitamin A: 1410IU | Vitamin C: 10mg | Calcium: 34mg | Iron: 1mg</p>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
-
 <div class="list">
-
 <div class="wrapper">
-
-      <h3>SIZZLING LIEMPO SISIG</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2018/07/sizzling-liempo-sisig.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+      <h3>SIZZLING LIEMPO SISIG</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2018/07/sizzling-liempo-sisig.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>2 lbs pork belly</ul>
-
 <ul>4 ounces chicken liver</ul>
-
 <ul>1 1/2 tablespoons Knorr Liquid Seasoning</ul>
-
 <ul>1/4 cup Lady's Choice Mayonnaise</ul>
-
 <ul>3 medium onions</ul>
-
 <ul>1 piece lemon</ul>
-
 <ul>4 cups water</ul>
-
 <ul>4 to 5 pieces Thai chili pepper optional, chopped</ul>
-
 <ul>1/2 teaspoon garlic powder optional</ul>
-
 <ul>1/4 teaspoon ground black pepper</ul>
-
 <ul>3 tablespoons cooking oil</ul>
-
 <ul>1 tablespoon margarine or butter</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>Pour water into a cooking pot. Let boil.</li>
-
 <li>Add pork belly. Cover and continue to boil in medium heat for 25 minutes.</li>
-
 <li>Discard water and let the liempo cool down.</li>
-
 <li>Grill the pork for 4 to 5 minutes per side. Remove from the grill and slice into cubes.</li>
-
 <li>Mince the onions using a food processor. Set aside.</li>
-
 <li>Place the grilled pork belly on the same food processor. Mince.</li>
-
 <li>Heat oil on a cooking pot.</li>
-
 <li>Pan-fry the chicken liver for 3 to 5 minutes per side.</li>
-
 <li>Remove chicken liver from the pot. Place in the food processor and mince.</li>
-
 <li>Saute onion using the remaining oil in the pot until it becomes soft.</li>
-
 <li>Add minced pork. Saute for 3 minutes.</li>
-
 <li>Put the chicken liver. Mix until well blended. Continue to cook for 5 to 7 minutes.</li>
-
 <li>Pour Knorr Liquid Seasoning. Stir.</li>
-
 <li>Add ground black pepper, garlic powder, and chili pepper. Mix until all ingredients are well blended. Cook for 2 to 3 minutes.</li>
-
 <li>Add Lady's Choice Mayonnaise. Mix until all ingredients are well blended. Continue to cook in high heat for 3 minutes. Set aside.</li>
-
 <li>Heat a metal plate (also known as sizzling plate)</li>
-
 <li>Run the butter over the plate until it melts.</li>
-
 <li>Transfer the cooked liempo sisig on the sizzling plate.</li>
-
 <li>Serve with lemon or calamansi. Share and enjoy!</li>
-
 <h4>NUTRITIONS</h4>
-
 <p>Serving: 4g | Calories: 416kcal | Carbohydrates: 5g | Protein: 46g | Fat: 22g | Saturated Fat: 10g | Cholesterol: 164mg | Sodium: 694mg | Potassium: 942mg | Fiber: 1g | Sugar: 2g | Vitamin A: 1410IU | Vitamin C: 10mg | Calcium: 34mg | Iron: 1mg</p>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
 
- 
-
 <div class="list">
-
 <div class="wrapper">
-
-      <h3>CLASSIC MACARONI SALAD</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2018/05/classic-macaroni-salad-recipe.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+      <h3>CLASSIC MACARONI SALAD</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2018/05/classic-macaroni-salad-recipe.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>1 lb. elbow macaroni
-
 <ul>1 1/2 cups Lady's Choice Mayonnaise</ul>
-
 <ul>1 medium red bell pepper</ul>
-
 <ul>1 medium green bell pepper</ul>
-
 <ul>1/4 cup minced carrot</ul>
-
 <ul>1/2 cup minced celery</ul>
-
 <ul>1 medium onion minced</ul>
-
 <ul>4 tablespoons distilled or white vinegar</ul>
-
 <ul>2 1/4 tablespoons mustard powder</ul>
-
 <ul>4 tablespoons granulated white sugar</ul>
-
 <ul>1/2 teaspoon ground black pepper</ul>
-
 <ul>4 teaspoons salt</ul>
-
 <ul>5 quarts water for boiling macaroni</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>Pour water into a cooking pot. Let boil.</li>
-
 <li>Add 2 teaspoons salt and then put-in the elbow macaroni. Continue to boil for 6 minutes.</li>
-
 <li>Drain the water and add cold water into the pot. Let is stay for 3 minutes and then drain. Set the macaroni aside.</li>
-
 <li>Combine mayonnaise, vinegar, mustard powder, ground black pepper, salt, and sugar. Mix well.</li>
-
 <li>Add the minced vegetables (onion, carrot, celery, and bell peppers). Fold the mixture until blended.</li>
-
 <li>Add the macaroni. Continue to fold until all the ingredients are well blended.</li>
-
 <li>Cover the bowl. Refrigerate the macaroni salad for at least 3 hours.</li>
-
 <li>Transfer to a serving bowl. Serve cold.</li>
-
 <li>Share and enjoy!</li>
-
 <h4>NUTRITIONS</h4>
-
 <p>Serving: 4g | Calories: 416kcal | Carbohydrates: 5g | Protein: 46g | Fat: 22g | Saturated Fat: 10g | Cholesterol: 164mg | Sodium: 694mg | Potassium: 942mg | Fiber: 1g | Sugar: 2g | Vitamin A: 1410IU | Vitamin C: 10mg | Calcium: 34mg | Iron: 1mg</p>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
-
- 
 
 <div class="list">
-
 <div class="wrapper">
-
-      <h3>CRISPY DINAKDAKAN</h3>
-
-    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2019/10/how-to-cook-dinakdakan-360x361.jpg"></center>
-
- 
-
-      <h4>INGREDIENTS</h4>
-
+      <h3>CRISPY DINAKDAKAN</h3>
+    <center><img src="https://panlasangpinoy.com/wp-content/uploads/2019/10/how-to-cook-dinakdakan-360x361.jpg"></center>
+ 
+      <h4>INGREDIENTS</h4>
 <ul>3/4 lb pork belly</ul>
-
 <ul>3/4 lb pig ears</ul>
-
 <ul>6 ounces pork liver sliced</ul>
-
 <ul>2 pieces onions sliced</ul>
-
 <ul>½ cup green onions chopped</ul>
-
 <ul>6 pieces Thai chili pepper chopped</ul>
-
 <ul>2 teaspoons whole peppercorn</ul>
-
 <ul>6 pieces dried bay leaves</ul>
-
 <ul>4 cloves garlic crushed</ul>
-
 <ul>Salt to taste</ul>
-
 <ul>3 cups cooking oil</ul>
-
 <ul>6 cups water</ul>
-
-     <h4>INSTRUCTIONS</h4>
-
+     <h4>INSTRUCTIONS</h4>
 <li>Tenderize the pork belly and pig ears. Do this by boiling water in a cooking pot. Add whole peppercorn, dried bay leaves, and garlic. Pig ears and pork belly into the pot. Cover and boil between low to medium heat for 45 to 60 minutes. Drain the liquid, set aside.</li>
-
 <li>Prepare the liver by rubbing with salt. Heat 2 tablespoons oil in a pan. Cook the liver by pan-frying until brown. Set aside.</li>
-
 <li>Heat 3 cups cooking oil in a deep fryer or deep cooking pot. Rub salt all over the boiled pig ears and belly.</li>
-
 <li>Deep-fry the ears for 10 minutes. Remove from the fryer and let it rest for 5 minutes. Fry again for another 10 minutes. Set aside.</li>
-
 <li>Deep-fry pork belly for 8 minutes. Remove from the fryer and let it rest for 5 minutes. Deep-fry again for 5 minutes or until crispy. Set aside.</li>
-
 <li>Prepare the dressing by combining all dressing ingredients in a bowl. Stir until smooth.</li>
-
 <li>Chop the ears and belly into bite-size pieces. Place in a large bowl and then add the fried liver. Toss. Add onion, green onion, and chili pepper. Mix until well blended.</li>
-
 <li>Pour half of the dressing into the bowl. Toss.</li>
-
 <li>Transfer to a serving plate. Serve. Share and enjoy!</li>
-
 <h4>NUTRITIONS</h4>
-
 <p>Serving: 4g | Calories: 416kcal | Carbohydrates: 5g | Protein: 46g | Fat: 22g | Saturated Fat: 10g | Cholesterol: 164mg | Sodium: 694mg | Potassium: 942mg | Fiber: 1g | Sugar: 2g | Vitamin A: 1410IU | Vitamin C: 10mg | Calcium: 34mg | Iron: 1mg</p>
-
-  </div>
-
-  </div>
-
+  </div>
+  </div>
 <br>
-
- 
 
 </body>
-
 </html>
-
